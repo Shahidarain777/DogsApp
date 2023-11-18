@@ -69,9 +69,13 @@ export default function Login() {
             />
             <FontAwesome name={"eye"} color={"#444"} size={18} />
           </View>
-          <Text style={{ textAlign: "right", fontSize: 8 }}>
-            Forget password? &nbsp;
-          </Text>
+          <Link href={{ pathname: "ForgotPassword" }} asChild>
+            <Pressable>
+              <Text style={{ textAlign: "right", fontSize: 8, padding: 10 }}>
+                Forget password?
+              </Text>
+            </Pressable>
+          </Link>
         </View>
         <View style={{ height: 38 }}></View>
         <Link href={{ pathname: "Login" }} asChild>

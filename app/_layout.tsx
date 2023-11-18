@@ -28,6 +28,8 @@ const StackLayout = () => {
         name="Login"
         options={{ headerTitle: "Otp", headerShown: false }}
       />
+      <Stack.Screen name="ForgotPassword" options={{ headerShown: false }} />
+      <Stack.Screen name="VerifyForgotOTP" options={{ headerShown: false }} />
       {/* <Stack.Screen
 				name="register"
 				options={{
